@@ -1,22 +1,32 @@
+## fcc-voting-app
+## freeCodeCamp - Backend Challenges
+## Dynamic Web Application Projects: [Build a Voting App](https://www.freecodecamp.org/challenges/build-a-voting-app)
 
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
+### Getting started
 
+```bash
+npm run dev
+```
 
-Welcome to your Node.js project on Cloud9 IDE!
+Run `npm run dev` for a dev server. The browser will load `http://localhost:8080/`. Wait until the app is built. At any change, the app will automatically rebuild and sync the browser.
 
-This chat example showcases how to use `socket.io` with a static `express` server.
+##### .env
+```
+# Node Server Port
+PORT=8000
 
-## Running the server
+# Node Server Url
+APP_URL=http://localhost:8000/
 
-1) Open `server.js` and start the app by clicking on the "Run" button in the top menu.
+# BrowserSync Proxy Url
+CALLBACK_URL=http://localhost:8080/
 
-2) Alternatively you can launch the app from the Terminal:
+# MongodDB Url
+MONGO_DB_URI=mongodb://localhost:27017/fcc-voting-app
+```
 
-    $ node server.js
+Built with [generator-angular-api](https://github.com/amimaro/generator-angular-api).
 
-Once the server is running, open the project in the shape of 'https://projectname-username.c9users.io/'. As you enter your name, watch the Users list (on the left) update. Once you press Enter or Send, the message is shared with all connected clients.
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
